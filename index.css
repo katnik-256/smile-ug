@@ -1,0 +1,294 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Default font for the entire body */
+    background-color: #ebeefb;
+}
+
+p {
+    font-family: 'Roboto', sans-serif; /* Apply a different font to paragraphs */
+    font-size: 16px; /* Set a comfortable reading size */
+    line-height: 1.6; /* Increase line height for better readability */
+    color: #333; /* Dark grey color for better contrast and less strain on eyes */
+}
+
+
+
+
+
+.navbar{
+    background-color: white;
+    
+}
+/* Nav links bolded */
+.navbar-nav .nav-link {
+    font-size: 120%;
+    font-weight: bold;
+    color: white; /* grey color */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  }
+
+  /* Nav links increase size on hover */
+  .navbar-nav .nav-link:hover {
+    transform: scale(1.1); /* Slightly increase the size */
+    color: #007bff; /* Optional: Change color on hover */
+  }
+
+  /* Style for dropdown links */
+  .dropdown-menu .dropdown-item {
+    color: #007bff; /* Default text color */
+    font-weight: bold; /* Make the text bold */
+    padding: 10px 20px; /* Adjust padding */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+  }
+
+  /* Hover effect for dropdown links */
+  .dropdown-menu .dropdown-item:hover {
+    background-color: #007bff; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+  }
+
+  /* Active/Focus state styling */
+  .dropdown-menu .dropdown-item:active, .dropdown-menu .dropdown-item:focus {
+    background-color: #0056b3; /* Darker blue when active/focused */
+    color: white;
+  }
+  /*--------carousel------------*/
+  .carousel-inner img {
+    height: 550px; /* Adjust this value to your preferred height */
+    object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
+}
+
+.jumbotron {
+            background: url('./Assets/Image2/mdd15.jpg') no-repeat center center; /* Background image */
+            background-size: cover; /* Cover the entire area */
+            color: white; /* Text color */
+            padding: 60px 30px; /* Padding inside the jumbotron */
+            margin-top: 50px; /* Remove margins */
+            width: 100%; /* Full width */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center; /* Centered text */
+        }
+        .jumbotron h1 {
+            font-size: 48px; /* Large font size for the headline */
+            font-weight: 700; /* Bold headline */
+            margin-bottom: 20px; /* Space below the headline */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+        }
+        .jumbotron p {
+            font-size: 20px; /* Slightly larger font for the paragraph */
+            margin-bottom: 30px; /* Space below the paragraph */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+        }
+        .jumbotron .btn {
+            background-color: #0056b3; /* Button background color */
+            color: white; /* Button text color */
+            padding: 15px 30px; /* Button padding */
+            font-size: 18px; /* Button text size */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Slightly rounded button */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: background-color 0.3s; /* Smooth transition on hover */
+        }
+        .jumbotron .btn:hover {
+            background-color: #003d80; /* Darker color on hover */
+        }
+
+        .section1 {
+          display: flex; /* Flexbox for the row with two columns */
+          align-items: center; /* Center content vertically */
+          justify-content: space-between; /* Space between the columns */
+          padding: 20px; /* Padding inside the section */
+          margin: 0; /* Zero margins */
+          width: 100%; /* Full width */
+      }
+
+      .text-column {
+          flex: 1; /* Flex for text column */
+          padding-right: 20px; /* Padding on the right for spacing */
+          text-align: left; /* Align text to the left */
+      }
+
+      .text-column h2 {
+          font-size: 28px; /* Headline size */
+          margin-bottom: 10px; /* Space below the headline */
+      }
+
+      .text-column p {
+          font-size: 18px; /* Paragraph size */
+          line-height: 1.6; /* Line height for readability */
+          margin-bottom: 20px; /* Space below paragraphs */
+      }
+
+      .image-column {
+          flex: 1; /* Flex for image column */
+          text-align: center; /* Center the image */
+      }
+
+      .image-column img {
+          max-width: 100%; /* Make sure the image is responsive */
+          height: auto; /* Maintain aspect ratio */
+          border-radius: 8px; /* Optional: Rounded corners for the image */
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Box shadow for the image */
+      }
+      .custom-caption {
+        
+        padding: 20px;
+        border-radius: 10px;
+        color: #0056b3; /* White text color */
+        text-align: center; /* Align text to the left */
+      }
+      
+      .custom-caption h5 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      
+      .custom-caption p {
+        font-size: 16px;
+        margin: 0;
+      }
+      
+      .carousel-item img {
+        filter: brightness(70%); /* Darken the image slightly */
+      }
+      
+      .carousel-caption {
+        bottom: 20%; /* Adjust the position of the caption */
+      }
+
+
+      .button-92 {
+        background-color: #007bff; /* Bootstrap primary color or any custom color */
+        color: white; /* Text color */
+        border: none; /* Remove default border */
+        padding: 10px 20px; /* Padding inside the button */
+        font-size: 16px; /* Font size */
+        font-weight: bold; /* Bold text */
+        border-radius: 5px; /* Rounded corners */
+        cursor: pointer; /* Pointer cursor on hover */
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    }
+    
+    .button-92:hover {
+        background-color: #0056b3; /* Darker shade on hover */
+        transform: scale(1.05); /* Slight zoom effect on hover */
+    }
+    
+    .button-92 i {
+        margin-left: 8px; /* Space between text and icon */
+    }
+    
+    .button-92:focus {
+        outline: none; /* Remove default focus outline */
+        box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Custom focus outline */
+    }
+    .button-92 {
+        transition: transform 0.3s ease;
+    }
+    
+    .button-92:hover {
+      transform: scale(1.9); /* Scale the button to 110% on hover */
+    }
+    .button-92[data-v-736b3c67] {
+        cursor: pointer;
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 0;
+        padding: .1em .3em;
+    }      
+    
+    h5{
+      font-weight: bold;
+      color: #2a2a2a;
+    }
+
+    fieldset {
+      border: 2px solid #007bff;
+      padding: 20px;
+      border-radius: 5px;
+  }
+
+  legend {
+      font-weight: bold;
+      color: #007bff;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #f7f7f7;
+}
+.required {
+  color: red;
+  font-weight: bold;
+}
+
+/* Style fornd the submit button */
+.btn-send {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #0e7b2e;
+  border: none;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-left: 00px;
+ 
+}
+
+/* Icon style */
+.btn-send i {
+  margin-left: 8px;
+}
+
+/* Hover effect: enlarge the button */
+.btn-send:hover {
+  transform: scale(1.5); /* Button enlarges on hover */
+}
+
+ /* Sticky WhatsApp Icon */
+ .whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #25D366; /* WhatsApp Green Color */
+  border-radius: 50%;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.whatsapp-icon img {
+  width: 35px;
+  height: 35px;
+}
+
+.whatsapp-icon:hover {
+  background-color: #128C7E; /* Darker WhatsApp color on hover */
+}
+
+
+ 
+
+    
