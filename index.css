@@ -292,6 +292,38 @@ th {
     object-fit: cover;
 }
 
- 
+.counter-section {
+  background-color: #f4f4f9;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.counter {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.counter-title {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+.column-content {
+  text-align: center;
+  margin-top: 20px;
+}
+.column-content img {
+  width: 100%;
+  max-width: 450px; /* Optional: limit max width of the image */
+  height: auto;
+  border-radius: 8px;
+}
+.column-text {
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 15px;
+}
 
     
