@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Village of Hope Uganda </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link rel="icon" href="./Assets/logo2.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <style>
+    h2{
+       text-align:center;
+    }
+    .col{
+        margin-top:3px;
+    }
+    .custom-row {
+            margin: 0; /* Remove margin for the row */
+        }
+        .custom-col {
+            padding: 15px; /* Optional: Add padding to the columns */
+        }
+        .read-more-btn {
+            margin-top: 10px; /* Add margin for spacing */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg  fixed-top" style="background-color:  rgb(14, 14, 124);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="gallery.html" style="color: white;">
+                <img src="./Assets/logo2.jpg" alt="School Icon" width="30" height="30" class="d-inline-block align-text-top">
+                Village of Hope
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background-color: white;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html" style="color: white;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html">About Us</a>
+                   </li>
+                   <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                   <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                   </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Donate.html">Donations</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+
+    
+    <a href="https://wa.me/256706034769?text=Hello!%20I'd%20like%20to%20inquire%20about%20..." class="whatsapp-icon" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+    <style>
+        /* Custom styles for social media icons */
+        .social-icons a {
+            color: #007bff;
+            font-size: 24px;
+            margin-right: 15px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #0056b3;
+        }
+
+        /* Full-width section */
+        .map-container {
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+        <!-- Custom Jumbotron -->
+<div class="jumbotron" style="background-image: url('./Assets/img8.jpg');">
+    <h1>Village of Hope-Uganda</h1>
+    <p class="text-warning">Saving Humanity</p>
+    <a href="student.html"><button role="button" class="button-92">
+        Make a Donation  
+        <i class="el-icon-s-promotion"></i>
+    </button></a>
+</div>
+
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Contact Us</h1>
+    
+    <div class="row">
+        <!-- Contact Form -->
+        <div class="col-lg-6 mb-4">
+            <h2>Get in Touch</h2>
+            <form name="myForm" id="phoneForm" onsubmit="return validateForm()">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter Your Name">
+                </div>
+                <div class="mb-3">
+                    <label for="phoneNumber" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number" required>
+                    <div class="form-text">Format: +256774567890</div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+        
+        <!-- Google Map -->
+        <div class="col-lg-6 mb-4">
+            <h2>Our Location</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d429441.24001370167!2d31.83993841430879!3d0.16690758688624058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177d60af48f3505f%3A0x7527c5eae065fffc!2sKituntu%20Umea%20Primary%20School!5e0!3m2!1sen!2sug!4v1725475245999!5m2!1sen!2sug" width="460" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Social Media Links -->
+    <div class="text-center mt-5">
+        <h2>Follow Us</h2>
+        <div class="social-icons">
+            <i class="fab fa-facebook"></i></a>
+            <i class="fab fa-twitter"></i></a>
+            <i class="fab fa-whatsapp"></i></a>
+            <i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+</div>
+
+    
+        
+    </main>
+
+    <!-- Main Content -->
+    
+      
+    </main>
+
+    <footer class=" text-white text-center pt-5" style="background:  rgb(14, 14, 124);">
+        <div class="container text-center text-md-left" >
+            <div class="row text-center text-md-left">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 ">
+                    <h3 class="text-uppercase mb-4 font-weight-bold text-warning">Village of Hope</h3>
+                    <img class="footer-image" src="./Assets/logo2.jpg" alt="footer-image" height="165" width="180">
+                    <p class="font-italic" style="color: white;">Save Humanity</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h3 class="text-uppercase mb-4 font-weight-bold text-warning">Links</h3>
+                    <p>
+                        <a href="index.html" class="text-white" style="text-decoration: none;">Home</a>
+                    </p>
+                    <p>
+                        <a href="about.html" class="text-white" style="text-decoration: none;">About</a>
+                    </p>
+                    <p>
+                        <a href="contact.html" class="text-white" style="text-decoration: none;">Contact us</a>
+                    </p>
+                    <p>
+                        <a href="gallery.html" class="text-white" style="text-decoration: none;">Gallery</a>
+                    </p>
+                   
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h3 class="text-uppercase mb-4 font-weight-bold text-warning">Organisation</h3>
+                    <p>
+                        <a href="contact.html" class="text-white" style="text-decoration: none;">Visit Us</a>
+                    </p>
+                    <p>
+                        <a href="activities.html" class="text-white" style="text-decoration: none;">Our Activities</a>
+                    </p>
+                    <p>
+                        <a href="donate.html" class="text-white" style="text-decoration: none;">Make Donations</a>
+                    </p>
+                    <p>
+                        <a href="faq.html" class="text-white" style="text-decoration: none;">FAQ</a>
+                    </p>
+                    <p>
+                        <a href="contact.html" class="text-white" style="text-decoration: none;">Join Our Team</a>
+                    </p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h3 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h3>
+                    <p style="color: white;">
+                        <i class="fas fa-home mr-3"></i>Kituntu Sub-county
+                    </p>
+                    <p style="color: white;">
+                        <i class="fas fa-envelope mr-3"></i>ivansim69@gmail.com
+                    </p>
+                    <p style="color: white;">
+                        <i class="fas fa-phone mr-3"></i>+256 706034769
+                    </p>
+                    <p style="color: white;">
+                        <i class="fas fa-phone mr-3"></i>+256 706034769
+                    </p>
+                    <p style="color: white;">
+                        <i class="fas fa-phone mr-3"></i>+256 
+                    </p>
+                </div>
+            </div>
+            <hr class="mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8" >
+                    <p style="color: white;">Copyright &copy;2024 All rights reservd to:
+                        <a href="copyright.html" style="text-decoration: none;">
+                            <strong class="text-warning">Village of Hope-Uganda</strong>
+                        </a>
+                    </p>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-center text-md-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/profile.php?id=61551726624984" class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                                <i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="" class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                                <i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://wa.me/256706034769" class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                                <i class="fab fa-whatsapp"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.youtube.com/channel/UC0vyq0ismC-FzdMMsLg6iYw" class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                                <i class="fab fa-youtube"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        // Counter animation script
+        $(document).ready(function() {
+            $('.counter').each(function() {
+                const $this = $(this),
+                    countTo = $this.attr('data-count');
+    
+                $({ countNum: $this.text() }).animate({
+                    countNum: countTo
+                },
+                {
+                    duration: 2000,
+                    easing: 'swing',
+                    step: function() {
+                        $this.text(Math.floor(this.countNum));
+                    },
+                    complete: function() {
+                        $this.text(this.countNum);
+                    }
+                });
+            });
+        });
+    </script>
+   
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="kikomeko.js"></script>
+</body>
+
+</html>
+
