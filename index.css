@@ -287,7 +287,10 @@ th {
 .whatsapp-icon:hover {
   background-color: #128C7E; /* Darker WhatsApp color on hover */
 }
-
+.card-img-top {
+    height: 10%; /* Quarter of the column height */
+    object-fit: cover;
+}
 
  
 
