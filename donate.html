@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Village of Hope Uganda </title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
@@ -70,9 +69,29 @@
     <a href="https://wa.me/256706034769?text=Hello!%20I'd%20like%20to%20inquire%20about%20..." class="whatsapp-icon" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
     </a>
+    <style>
+        /* Custom styles for social media icons */
+        .social-icons a {
+            color: #007bff;
+            font-size: 24px;
+            margin-right: 15px;
+            transition: color 0.3s ease;
+        }
 
-    <!-- Custom Jumbotron -->
-<div class="jumbotron" style="background-image: url('./Assets/image2.jpg'); height: 450px;">
+        .social-icons a:hover {
+            color: #0056b3;
+        }
+
+        /* Full-width section */
+        .map-container {
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+        <!-- Custom Jumbotron -->
+<div class="jumbotron" style="background-image: url('./Assets/image2.jpg'); height: 200px;">
     <h1>Village of Hope-Uganda</h1>
     <p class="text-warning">Saving Humanity</p>
     <a href="student.html"><button role="button" class="button-92">
@@ -81,67 +100,101 @@
     </button></a>
 </div>
 
-    <!-- Main Content -->
-    <div class="container" style="background-color: white; margin-top: 2%;" >
-        <div class="row custom-row" style="background-color: white;">
-            <div class="col-md-6 custom-col">
-                <h2 style="color: rgb(14, 14, 124);">Who we are</h2>
-                <p class="card-text">Village of Hope Uganda (VOH) is a non-profit organization based in Uganda, we are dedicated 
-                    in providing  a better life through  education and  helping the needy
-                </p>
-                <p class="card-text">We are a dynamic and innovative team dedicated to providing exceptional assistance all across  
-                    the country through supporting those in needy, educating the children, providing the  
-                    necessities regardless of the color religion physical appearance and tribe.
-                </p class="card-text">
-                  <p>We hope that working  together  could  be one of strongest weapon we got in you continue  
-                    support us by all means  such that we support  humanity  together  
-                </p>
-                    
-                <a href="index.html" class="btn btn-primary read-more-btn">Go Back</a>
-            </div>
-            <div class="col-md-6 custom-col">
-                <img src="./Assets/Image1.jpg" alt="Descriptive Alt Text" class="img-fluid">
-            </div>
-        </div>
-      </div> 
+ <!-- Main Content -->
+ <main class="container my-5">
+    <div class="container mt-4">
+        <h2 class="mb-4 text-center">Select Payment Method</h2>
+        <form>
+            <!-- Radio Buttons for Payment Method -->
+            <fieldset>
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="airtelMoney" name="paymentMethod" value="airtel" required onclick="redirectToPaymentPage('airtel')">
+                            <label for="airtelMoney" class="form-check-label">
+                                <img src="Assets/airtel.jpeg" alt="Airtel Money" style="width: 110px; height: 100px; margin-right: 8px;">
+                                Airtel Money
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="airtelMoney" name="paymentMethod" value="airtel" required onclick="redirectToPaymentPage('mtn')">
+                            <label for="mtnMoney" class="form-check-label">
+                                <img src="Assets/Mtn.jpeg" alt="MTN Money" style="width: 100px; height: 100px; margin-right: 10px;">
+                                MTN Mobile Money
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="bankPayment" name="paymentMethod" value="bank" required onclick="redirectToPaymentPage('bank')">
+                            <label for="bankPayment" class="form-check-label">
+                                <img src="Assets/stanbic.png" alt="MTN Money" style="width: 100px; height: 100px; margin-right: 10px;">
+                                Bank Payment
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Hidden sections for Airtel Money -->
+                <div id="airtelSection" style="display: none;">
+                    <div class="mb-3">
+                        <label for="airtelNumber" class="form-label">Airtel Money Number:</label>
+                        <input type="tel" class="form-control" id="airtelNumber" name="airtelNumber" placeholder="Enter Airtel Money number">
+                    </div>
+                    <div class="mb-3">
+                        <label for="airtelAmount" class="form-label">Amount to Pay:</label>
+                        <input type="number" class="form-control" id="airtelAmount" name="airtelAmount" placeholder="Enter amount">
+                    </div>
+                </div>
 
-      <div class="container mission-vision-objectives">
-        <div class="row">
-            <!-- Mission Column -->
-            <div class="col-md-4">
-                <h2 class="heading" data-toggle="collapse" data-target="#missionContent">Mission</h2>
-                <div id="missionContent" class="collapse content">
-                    <p>Provide a safe, nurturing environment for orphaned children, promoting their physical, 
-                        emotional, and educational well-being.
-                    </p>
-                </div>
-            </div>
+            </fieldset>
+    
+            <!-- Submit Button -->
             
-            <!-- Vision Column -->
-            <div class="col-md-4">
-                <h2 class="heading" data-toggle="collapse" data-target="#visionContent">Vision</h3>
-                <div id="visionContent" class="collapse content">
-                    <p>Our vision is to be a global leader in our industry, recognized for our innovative approach, 
-                        dedication, and contribution to sustainable growth.</p>
-                </div>
+        </form>
+    </div> 
+</main>
+
+
+
+    
+    <!-- Social Media Links -->
+    <div class="container my-4">
+        <div class="row social-icons">
+            <h2>Follow Us</h2>
+            <div class="col">
+                <a href="https://wa.me/256706034769?text=Hello!%20I'd%20like%20to%20inquire%20about%20..." target="_blank">
+                    <i class="fab fa-whatsapp" style="color: #25D366;"></i>
+                </a>
             </div>
-            
-            <!-- Objectives Column -->
-            <div class="col-md-4">
-                <h3 class="heading" data-toggle="collapse" data-target="#objectivesContent">Objectives</h3>
-                <div id="objectivesContent" class="collapse content">
-                    <ul class="list-group">
-                        <li>Provide shelter,food,clothing,and healthcare.</li>
-                        <li>Ensure access to quality education.</li>
-                        <li>Foster emotional support and psychological well-being.</li>
-                        <li>Develop life skills and independence.</li>
-                        <li>Facilitate social integration and community engagement.</li>
-                       
-                    </ul>
-                </div>
+            <div class="col">
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fab fa-youtube" style="color: #FF0000;"></i>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://www.facebook.com/share/15CidkPg48/" target="_blank">
+                    <i class="fab fa-facebook" style="color: #1877F2;"></i>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fab fa-twitter" style="color: #1DA1F2;"></i>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fab fa-instagram" style="color: #C13584;"></i>
+                </a>
             </div>
         </div>
     </div>
+</div>
+
+    
+        
     
 
     <footer class=" text-white text-center pt-5" style="background:  rgb(14, 14, 124);">
@@ -243,35 +296,12 @@
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script>
-        // Counter animation script
-        $(document).ready(function() {
-            $('.counter').each(function() {
-                const $this = $(this),
-                    countTo = $this.attr('data-count');
-    
-                $({ countNum: $this.text() }).animate({
-                    countNum: countTo
-                },
-                {
-                    duration: 2000,
-                    easing: 'swing',
-                    step: function() {
-                        $this.text(Math.floor(this.countNum));
-                    },
-                    complete: function() {
-                        $this.text(this.countNum);
-                    }
-                });
-            });
-        });
-    </script>
-   
-
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="pay.js"></script>
+    <script src="kikomeko.js"></script>
     
 </body>
 

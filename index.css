@@ -325,5 +325,41 @@ th {
   color: #555;
   margin-top: 15px;
 }
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+}
+.social-icons i {
+  font-size: 60px;
+  color: #333;
+  transition: color 0.3s;
+}
+.social-icons i:hover {
+  color: #007bff; /* Customize hover color */
+}
 
+.mission-vision-objectives {
+  padding: 40px 0;
+  background-color: white;
+  text-align: justify;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  
+}
+.heading {
+  font-size: 1.8rem;
+  color: #007bff;
+  cursor: pointer;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bolder;
+  
+}
+.content {
+  font-size: 1rem;
+  color: #333;
+}
     
